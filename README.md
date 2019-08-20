@@ -5,7 +5,7 @@
 Node.js plugin for interaction with [AssertThat BDD Jira plugin](https://marketplace.atlassian.com/apps/1219033/assertthat-bdd-test-management-in-jira?hosting=cloud&tab=overview).
 
 ```
-$ npm install @assertthat/assertthat-bdd -g
+$ npm install anil-assertthat-bdd -g
 ```
 
 ## Using from the command line
@@ -15,7 +15,7 @@ Documentation on how to obtain access/secret keys and project id can be found he
 Parameters can either be passed from the command line:
 
 ```
-$ assertthat-bdd -i PROJECT_ID -a ASSERTTHAT_ACCESS_KEY -s ASSERTTHAT_SECRET_KEY -f (for downloading feature files) -r (for uploading reports)
+$ anil-assertthat-bdd -i PROJECT_ID -a ASSERTTHAT_ACCESS_KEY -s ASSERTTHAT_SECRET_KEY -f (for downloading feature files) -r (for uploading reports)
 ```
 
 Available parameters:
@@ -45,7 +45,7 @@ Mandatory parameters are -i, -a, -s (if -a or -s is missing the plugin will atte
 You can use the client in your own scripts to download feature files and upload reports to AssertThat BDD .
 
 ```
-$ npm install @assertthat/assertthat-bdd --save
+$ npm install anil-assertthat-bdd --save
 ```
 
 * For downloading feature files:
