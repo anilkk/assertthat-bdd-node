@@ -2,7 +2,7 @@
 
 var assertThat = require('./lib/assertthat-bdd');
 var _ = require('underscore');
-var dateFormat = require('dateFormat');
+var _dateFormat = require('dateFormat');
 var now = new Date();
 
 var defaults = {
@@ -10,7 +10,7 @@ var defaults = {
     secretKey: process.env.ASSERTTHAT_SECRET_KEY,
     jsonReportFolder: './reports/',
     mode: 'automated',
-    runName: 'Test run ' + dateFormat(now, "dd mmm yyyy HH:mm:ss"),
+    runName: 'Test run ' + _dateFormat(now, "dd mmm yyyy HH:mm:ss"),
     outputFolder: './features/',
     proxyURI:  process.env.http_proxy,
 
