@@ -1,5 +1,5 @@
 {
-  "name": "@assertthat/assertthat-bdd",
+  "name": "@assertthat-anil/assertthat-bdd",
   "version": "1.2.0",
   "description": "Node.js module for integration with AssertThat BDD Jira plugin",
   "main": "index.js",
@@ -19,7 +19,7 @@
   ],
   "author": "AssertThat",
   "license": "MIT",
-  "bin":{
+  "bin": {
     "assertthat-bdd": "bin/cli.js"
   },
   "bugs": {

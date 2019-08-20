@@ -1,7 +1,9 @@
 'use strict'
 
-var assertThat = require('../lib/assertthat-bdd');
+var assertThat = require('./lib/assertthat-bdd');
 var _ = require('underscore');
+var dateFormat = require('dateFormat');
+var now = new Date();
 
 var defaults = {
     accessKey: process.env.ASSERTTHAT_ACCESS_KEY,
