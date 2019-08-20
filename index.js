@@ -2,15 +2,16 @@
 
 var assertThat = require('./lib/assertthat-bdd');
 var _ = require('underscore');
-var _dateFormat = require('dateFormat');
 var now = new Date();
+var datestring = now.getDate()  + "-" + (now.getMonth()+1) + "-" + now.getFullYear() + " " +
+    now.getHours() + ":" + now.getMinutes();
 
 var defaults = {
     accessKey: process.env.ASSERTTHAT_ACCESS_KEY,
     secretKey: process.env.ASSERTTHAT_SECRET_KEY,
     jsonReportFolder: './reports/',
     mode: 'automated',
-    runName: 'Test run ' + _dateFormat(now, "dd mmm yyyy HH:mm:ss"),
+    runName: 'Test run ' + datestring,
     outputFolder: './features/',
     proxyURI:  process.env.http_proxy,
 
